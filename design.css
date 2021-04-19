@@ -24,9 +24,6 @@ h1{
     line-height: 50px;
     font-weight: bold;
 }
-img{
-    border-radius: 50%;
-}
 .hero{
     outline: 1px solid red;
     height: 100vh;
@@ -41,10 +38,14 @@ img{
 .headshot{
     width: 500px;
     height: 500px;
+    border-radius: 50%;
+    overflow: hidden;
     margin-left: auto;
     margin-right: auto;
-    transition: transform 10s;
+    transition: transform 7s, box-shadow 4s;
 }
 .headshot:hover{
     transform: rotate(360deg);
+    box-shadow: 0px 0px 50px 25px blue,
+                0px 0px 50px 10px lightblue;
 }
